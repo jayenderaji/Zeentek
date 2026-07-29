@@ -1,133 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZEENTEK | Enterprise IT Business Consultant</title>
-<link rel="stylesheet" href="style.css">
-</head>
+body{
 
-<body>
+font-family:Arial,Helvetica,sans-serif;
 
-<header>
-    <div class="container">
-        <h1>ZEENTEK</h1>
-        <p>Enterprise IT Infrastructure & Business Consulting</p>
+margin:0;
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#why">Why Us</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-</header>
+padding:0;
 
-<section class="hero">
+background:#f5f7fa;
 
-<h2>Empowering Businesses with Technology</h2>
+color:#333;
 
-<p>
-Enterprise IT Infrastructure, Cloud, Cyber Security,
-Networking, Storage & Digital Transformation Solutions.
-</p>
+line-height:1.6;
 
-<a href="#contact" class="button">Contact Us</a>
+}
 
-</section>
+header{
 
-<section id="about">
+background:#0056b3;
 
-<h2>About Zeentek</h2>
+color:white;
 
-<p>
+padding:25px;
 
-Zeentek provides enterprise IT consulting and technology
-solutions helping organizations modernize their IT
-Infrastructure, improve Cyber Security and accelerate
-Digital Transformation.
+text-align:center;
 
-</p>
+}
 
-</section>
+header h1{
 
-<section id="services">
+margin:0;
 
-<h2>Our Services</h2>
+font-size:42px;
 
-<div class="cards">
+}
 
-<div class="card">
-<h3>Enterprise IT Infrastructure</h3>
-<p>Design and implementation of enterprise IT environments.</p>
-</div>
+nav{
 
-<div class="card">
-<h3>Servers & Storage</h3>
-<p>Reliable compute and storage solutions for businesses.</p>
-</div>
+margin-top:15px;
 
-<div class="card">
-<h3>Networking</h3>
-<p>LAN, WAN, Wireless and Network Security solutions.</p>
-</div>
+}
 
-<div class="card">
-<h3>Cyber Security</h3>
-<p>Protecting organizations against modern cyber threats.</p>
-</div>
+nav a{
 
-<div class="card">
-<h3>Cloud Solutions</h3>
-<p>Hybrid Cloud, Migration and Cloud Infrastructure services.</p>
-</div>
+color:white;
 
-<div class="card">
-<h3>Backup & Disaster Recovery</h3>
-<p>Business continuity with secure backup solutions.</p>
-</div>
+text-decoration:none;
 
-</div>
+margin:0 15px;
 
-</section>
+font-weight:bold;
 
-<section id="why">
+}
 
-<h2>Why Choose Zeentek?</h2>
+.hero{
 
-<ul>
+background:#007bff;
 
-<li>32+ Years Enterprise IT Experience</li>
+color:white;
 
-<li>2000+ Enterprise Customer Relationships</li>
+padding:80px 20px;
 
-<li>PAN India Business Support</li>
+text-align:center;
 
-<li>Customer First Approach</li>
+}
 
-<li>Trusted Technology Partner</li>
+.hero h2{
 
-</ul>
+font-size:38px;
 
-</section>
+margin-bottom:20px;
 
-<section id="contact">
+}
 
-<h2>Contact</h2>
+.button{
 
-<p><strong>Jayender Iyer</strong></p>
+background:white;
 
-<p>Email: Jayender@zeentek.in</p>
+color:#0056b3;
 
-<p>Website: www.zeentek.in</p>
+padding:12px 25px;
 
-</section>
+text-decoration:none;
 
-<footer>
+border-radius:5px;
 
-<p>© 2026 ZEENTEK. All Rights Reserved.</p>
+font-weight:bold;
 
-</footer>
+}
 
-</body>
-</html>
+section{
+
+padding:50px 10%;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+.card{
+
+background:white;
+
+padding:20px;
+
+border-radius:10px;
+
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+
+}
+
+footer{
+
+background:#003366;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+margin-top:30px;
+
+}
+
+ul li{
+
+margin-bottom:10px;
+}
