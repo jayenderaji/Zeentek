@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZEENTEK | Enterprise IT Business Consultant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>ZEENTEK</h1>
+        <p>Enterprise IT Infrastructure & Business Consulting</p>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#why">Why Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+
+<h2>Empowering Businesses with Technology</h2>
+
+<p>
+Enterprise IT Infrastructure, Cloud, Cyber Security,
+Networking, Storage & Digital Transformation Solutions.
+</p>
+
+<a href="#contact" class="button">Contact Us</a>
+
+</section>
+
+<section id="about">
+
+<h2>About Zeentek</h2>
+
+<p>
+
+Zeentek provides enterprise IT consulting and technology
+solutions helping organizations modernize their IT
+Infrastructure, improve Cyber Security and accelerate
+Digital Transformation.
+
+</p>
+
+</section>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Enterprise IT Infrastructure</h3>
+<p>Design and implementation of enterprise IT environments.</p>
+</div>
+
+<div class="card">
+<h3>Servers & Storage</h3>
+<p>Reliable compute and storage solutions for businesses.</p>
+</div>
+
+<div class="card">
+<h3>Networking</h3>
+<p>LAN, WAN, Wireless and Network Security solutions.</p>
+</div>
+
+<div class="card">
+<h3>Cyber Security</h3>
+<p>Protecting organizations against modern cyber threats.</p>
+</div>
+
+<div class="card">
+<h3>Cloud Solutions</h3>
+<p>Hybrid Cloud, Migration and Cloud Infrastructure services.</p>
+</div>
+
+<div class="card">
+<h3>Backup & Disaster Recovery</h3>
+<p>Business continuity with secure backup solutions.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="why">
+
+<h2>Why Choose Zeentek?</h2>
+
+<ul>
+
+<li>32+ Years Enterprise IT Experience</li>
+
+<li>2000+ Enterprise Customer Relationships</li>
+
+<li>PAN India Business Support</li>
+
+<li>Customer First Approach</li>
+
+<li>Trusted Technology Partner</li>
+
+</ul>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p><strong>Jayender Iyer</strong></p>
+
+<p>Email: Jayender@zeentek.in</p>
+
+<p>Website: www.zeentek.in</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 ZEENTEK. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
