@@ -1,145 +1,420 @@
-body{
 
-font-family:Arial,Helvetica,sans-serif;
+/* ================================
+   ZEENTEK - Professional Website
+   ================================ */
 
-margin:0;
-
-padding:0;
-
-background:#f5f7fa;
-
-color:#333;
-
-line-height:1.6;
-
-}
-  .logo{
-    width:180px;
-    height:auto;
-    display:bolck;
-    margin:0 auto 10px;
-  }
-header{
-    ...
-  }
-
-header{
-
-background:#0056b3;
-
-color:white;
-
-padding:25px;
-
-text-align:center;
-
+* {
+    box-sizing: border-box;
 }
 
-header h1{
-
-margin:0;
-
-font-size:42px;
-
+html {
+    scroll-behavior: smooth;
 }
 
-nav{
-
-margin-top:15px;
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #17233d;
+    line-height: 1.6;
 }
 
-nav a{
+/* ================================
+   HEADER
+   ================================ */
 
-color:white;
-
-text-decoration:none;
-
-margin:0 15px;
-
-font-weight:bold;
-
+header {
+    background: #ffffff;
+    color: #102d63;
+    padding: 18px 6%;
+    border-bottom: 1px solid #e5eaf2;
 }
 
-.hero{
-
-background:#007bff;
-
-color:white;
-
-padding:80px 20px;
-
-text-align:center;
-
+header .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-.hero h2{
-
-font-size:38px;
-
-margin-bottom:20px;
-
+.logo {
+    width: 180px;
+    height: auto;
+    display: block;
 }
 
-.button{
-
-background:white;
-
-color:#0056b3;
-
-padding:12px 25px;
-
-text-decoration:none;
-
-border-radius:5px;
-
-font-weight:bold;
-
+header p {
+    margin: 0;
+    color: #008fa3;
+    font-size: 14px;
+    font-weight: 600;
 }
 
-section{
-
-padding:50px 10%;
-
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
 }
 
-.cards{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:20px;
-
+nav a {
+    color: #17233d;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s ease;
 }
 
-.card{
-
-background:white;
-
-padding:20px;
-
-border-radius:10px;
-
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-
+nav a:hover {
+    color: #008fa3;
 }
 
-footer{
+/* ================================
+   HERO
+   ================================ */
 
-background:#003366;
-
-color:white;
-
-text-align:center;
-
-padding:20px;
-
-margin-top:30px;
-
+.hero {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 85% 40%, rgba(0, 180, 200, 0.25), transparent 35%),
+        linear-gradient(115deg, #f5faff 0%, #e7f3fb 48%, #d7eaf8 100%);
+    padding: 105px 8%;
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-ul li{
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: -180px;
+    top: -120px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 86, 179, 0.12);
+    box-shadow:
+        0 0 0 60px rgba(0, 86, 179, 0.04),
+        0 0 0 120px rgba(0, 86, 179, 0.025);
+}
 
-margin-bottom:10px;
+.hero h1 {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    font-size: 54px;
+    line-height: 1.12;
+    margin: 0 0 25px;
+    color: #102d63;
+    letter-spacing: -1px;
+}
+
+.hero h1::before {
+    content: "IT BUSINESS CONSULTING & BUSINESS CONNECTIVITY";
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    color: #008fa3;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.hero p {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+    font-size: 19px;
+    color: #34435c;
+    margin: 0 0 32px;
+}
+
+.button {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: fit-content;
+    background: #06479b;
+    color: #ffffff;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(6, 71, 155, 0.18);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #008fa3;
+    transform: translateY(-2px);
+}
+
+/* ================================
+   SECTIONS
+   ================================ */
+
+section:not(.hero) {
+    padding: 75px 8%;
+}
+
+section h2 {
+    max-width: 1100px;
+    margin: 0 auto 25px;
+    text-align: center;
+    color: #102d63;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: #00a5b5;
+    margin: 15px auto 0;
+    border-radius: 3px;
+}
+
+section#about {
+    background: #ffffff;
+}
+
+section#about p {
+    max-width: 900px;
+    margin: 15px auto;
+    text-align: center;
+    color: #526078;
+    font-size: 17px;
+}
+
+/* ================================
+   SERVICES
+   ================================ */
+
+section#services {
+    background: #f5f8fc;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 32px 26px;
+    border-radius: 10px;
+    border: 1px solid #e3e9f1;
+    box-shadow: 0 8px 25px rgba(20, 50, 90, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(20, 50, 90, 0.12);
+}
+
+.card h3 {
+    color: #06479b;
+    font-size: 21px;
+    margin: 0 0 12px;
+}
+
+.card h3::before {
+    content: "";
+    display: block;
+    width: 38px;
+    height: 3px;
+    background: #00a5b5;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #5b687c;
+    margin: 0;
+}
+
+/* ================================
+   WHY ZEENTEK
+   ================================ */
+
+section#why {
+    background: #063b80;
+    color: #ffffff;
+}
+
+section#why h2 {
+    color: #ffffff;
+}
+
+section#why ul {
+    max-width: 850px;
+    margin: 35px auto 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 35px;
+}
+
+section#why li {
+    position: relative;
+    padding: 18px 20px 18px 48px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 7px;
+    color: #ffffff;
+}
+
+section#why li::before {
+    content: "✓";
+    position: absolute;
+    left: 18px;
+    top: 15px;
+    color: #35c5d0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ================================
+   CONTACT
+   ================================ */
+
+section#contact {
+    text-align: center;
+    background: #ffffff;
+}
+
+section#contact p {
+    color: #526078;
+    font-size: 17px;
+}
+
+section#contact strong {
+    color: #102d63;
+    font-size: 22px;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    background: #071f43;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #d8e2ef;
+    font-size: 14px;
+}
+
+/* ================================
+   MOBILE / IPHONE
+   ================================ */
+
+@media (max-width: 900px) {
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 20px;
+    }
+
+    .hero {
+        padding: 75px 7%;
+        min-height: 500px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        width: 145px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    nav {
+        gap: 10px 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 65px 22px;
+        min-height: 520px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h1::before {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section:not(.hero) {
+        padding: 55px 20px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 30px;
+    }
+
+    .card {
+        padding: 25px 22px;
+    }
+
+    section#why ul {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
 }
