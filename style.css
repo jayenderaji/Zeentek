@@ -74,7 +74,7 @@ nav a:hover {
 .hero {
     position: relative;
     overflow: hidden;
-    min-height: 690px;
+    min-height: 560px;
     background: linear-gradient(
         120deg,
         #f8fbff 0%,
@@ -679,7 +679,7 @@ footer {
     .hero-container {
         width: 92%;
         min-height: auto;
-        padding: 70px 0 60px;
+        padding: 35px 0 50px;
     }
 
     .hero h1 {
